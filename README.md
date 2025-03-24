@@ -2,9 +2,37 @@
 
 Welcome to my GitHub portfolio! This repository showcases a collection of my projects, demonstrating my skills and experience in Web development.
 
+------
+
 ## Key Features/Highlights
 
 * **Web application assignment 1 and 2:** School assignment in Front-end & UI, A responsive web application built with Bootstrap.
+
+## How to Run Web Application Assignments 1 & 2
+
+These projects are responsive web applications built with Bootstrap. To run them, follow these steps:
+
+1.  **Download the project files:**
+    * Click the "Code" button.
+    * Select "Download ZIP".
+    * Extract the downloaded ZIP file to a local folder on your computer.
+
+2.  **Open the HTML files:**
+    * Navigate to the extracted folder.
+    * To view the "About" page, open the `about.html` file in your web browser (e.g., Chrome, Firefox, Safari).
+    * To view the "Index" page, open the `index.html` file in your web browser.
+
+3.  **Important Note:**
+    * These projects are designed to be viewed directly in a web browser. Ensure you have a modern web browser installed.
+
+## About Web Application Assignments 1 & 2
+
+These two assignments were created to build responsive websites for two fictional Pharmaceutical Companies, Tricell Inc. and Umbrella Corp. 
+The challenge was to design a modern web development approach, using the Bootstrap framework, to portray these companies with a contemporary look. 
+The assignments focused on practising responsive design principles and effectively utilizing Bootstrap components to create user-friendly and visually 
+appealing websites.
+
+------
 
 ## How to Reach Me
 
