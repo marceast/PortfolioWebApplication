@@ -1,0 +1,351 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    flex-grow: 1;
+
+}
+
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+
+.container-menu {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-home,
+.btn-about,
+.btn-contact {
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-login {
+    background-color: rgb(171, 208, 55);
+    color: rgb(255, 255, 255);
+}
+
+.btn-home:hover,
+.btn-about:hover,
+.btn-contact:hover {
+    background-color: rgb(171, 208, 55);
+    color: rgb(255, 255, 255);
+}
+
+.img-fb:hover,
+.img-in:hover,
+.img-pi:hover,
+.img-sn:hover,
+.img-li:hover,
+.img-yo:hover {
+    background-color: rgb(171, 208, 55);
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Grundläggande layout för header */
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media query för mindre skärmar */
+@media (max-width: 768px) {
+    .header-logo {
+        flex-direction: column;
+    }
+
+    .container-menu {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .container-menu button {
+        width: 100%;
+    }
+}
+
+.social-box {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* För små skärmar */
+@media (max-width: 768px) {
+    .social-button {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Breadcrumb styling */
+.breadcrumb {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+a {
+    color: rgb(39, 81, 41);
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: rgb(171, 208, 55);
+}
+
+/* Main content layout */
+.main-content {
+    flex: 1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+p1 {
+    text-align: right;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+p3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: rgb(137, 168, 33)
+}
+
+
+.main-box-green {
+
+    background-image:
+        linear-gradient(to top, rgb(137, 168, 33), transparent),
+        linear-gradient(to bottom, rgba(35, 43, 51, 0), transparent),
+        url('bg-images/bild-pharma.png');
+    /* Ange sökvägen till din bild */
+    background-size: cover;
+    /* Gör så att bakgrunden täcker hela boxen */
+    background-position: center center;
+    /* Centrerar bakgrunden inom boxen */
+    background-repeat: no-repeat;
+    /* Förhindrar att bakgrunden upprepas */
+    /* Justera höjden om du vill ha en viss höjd på boxen */
+    color: rgb(255, 255, 255);
+    /* Textfärg som kontrasterar mot bakgrunden */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: left;
+    padding: 10px 30px;
+    background-color: black;
+    height: 100%;
+    border-bottom: 5px solid white;
+}
+
+.main-box-green-2 {
+    background-image:
+        linear-gradient(to top, rgb(137, 168, 33), transparent),
+        linear-gradient(to bottom, rgba(35, 43, 51, 0), transparent),
+        url('bg-images/news-bild.png');
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: left;
+    padding: 10px 30px;
+    background-color: black;
+    height: 100%;
+
+}
+
+.main-box-darkgreen {
+    background-image:
+        linear-gradient(to top, rgb(34, 107, 38), transparent),
+        linear-gradient(to bottom, rgba(35, 43, 51, 0), transparent),
+        url('bg-images/natural-bild.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: left;
+    padding: 10px 30px;
+    background-color: black;
+    height: 100%;
+    border-bottom: 5px solid white;
+}
+
+.main-box-darkgreen-2 {
+    background-image:
+        linear-gradient(to top, rgb(34, 107, 38), transparent),
+        linear-gradient(to bottom, rgba(35, 43, 51, 0), transparent),
+        url('bg-images/conference-bild.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: left;
+    padding: 10px 30px;
+    background-color: black;
+    height: 100%;
+}
+
+.main-box-blue {
+    background-image: linear-gradient(to top, rgb(59, 155, 155), transparent),
+        linear-gradient(to bottom, rgba(35, 43, 51, 0), transparent),
+        url('bg-images/ship-bild.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: left;
+    padding: 10px 30px;
+    background-color: black;
+    height: 100%;
+    border-bottom: 5px solid white;
+}
+
+.main-box-blue-2 {
+    background-image: linear-gradient(to top, rgb(59, 155, 155), transparent),
+        linear-gradient(to bottom, rgba(35, 43, 51, 0), transparent),
+        url('bg-images/job-bild.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    text-align: left;
+    padding: 10px 30px;
+    background-color: black;
+    height: 100%;
+
+}
+
+.main-box-green,
+.main-box-darkgreen,
+.main-box-blue,
+.main-box-green-2,
+.main-box-darkgreen-2,
+.main-box-blue-2 {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: left;
+}
+
+/* Större skärmar */
+@media (min-width: 768px) {
+
+    .main-box-green,
+    .main-box-blue,
+    .main-box-darkgreen {
+        height: 400px;
+    }
+}
+
+/* Mindre skärmar */
+@media (max-width: 768px) {
+
+    .main-box-green,
+    .main-box-blue,
+    .main-box-darkgreen {
+        height: 300px;
+    }
+}
+
+
+.copyright {
+    padding-left: 30px;
+    text-align: center;
+}
+
+.main-content.container-fluid {
+    padding: 4px;
+}
+
+.box1 {
+    background-image: linear-gradient(45deg, rgb(221, 221, 221), rgb(255, 255, 255));
+    color: rgb(0, 0, 0);
+    border-bottom: 20px solid white;
+}
+
+.box2 {
+    background-image: linear-gradient(45deg, rgb(255, 255, 255), rgb(221, 221, 221));
+    color: rgb(0, 0, 0);
+    border-bottom: 20px solid white;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    padding: 80px;
+}
+
+.container-info {
+    padding: 0;
+    margin: 0;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.title {
+    align-self: flex-end;
+    text-align: left;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.content {
+    text-align: left;
+}
